@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+.hero {
+    background-image: url("../img/hero-bg.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    height: 100%;
+}
+
+.hero-wrap {
+    padding: 20% 0 250px;
+}
+.overlay {
+    content: "";
+    display: block;
+    height: 100%;
+    background-image: url("../img/hero-bg-overlay.png");
+    background-size: cover;
+}
+.hero h1 span {
+    font-size: 1rem;
+    position: absolute;
+}
+.hero .btn, .discover .btn {
+    transition: all .3s;
+}
+
+.hero .btn:hover, .discover .btn:hover {
+    background: #00DFFC !important;
+    color: #000000;
+    box-shadow: 5px 5px 7px #00000079 !important;
+}
+.hero .btn, .discover .btn {
+    font-family: "Roboto", sans-serif;
+    background-color: #165178;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.features-wrap {
+    transition: all .5s;
+    min-height: 340px;
+    color: #707070 !important;
+    margin-top:-150px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.features-wrap:hover {
+    box-shadow: 12px 15px 20px #00000079;
+}
+
+.feature-img img {
+    display: block;
+    height: 120px;
+}
+.feature-text h3 {
+    font-size: 18px;
+}
+
+.discover {
+    color: #707070 !important;
+    background-image: url(../img/discover-bg1.png);
+    background-position-x: 100%;
+    /* background-size: 80%; */
+    background-repeat: no-repeat;
+}
+.discover-content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.discover .discover-text h3 {
+    color: #00DFFC;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.discover .discover-text h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.discover .knwldg-card {
+    position: absolute;
+    transition: all .5s;
+    display: block !important;
+    width: 330px;
+    height: 330px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.discover .card1 {
+    left: 0;
+}
+.discover .card2 {
+    left: 30%; 
+    top: 35%;
+}
+.discover .card3 {
+    left: 56%;
+}
+
+.discover .knwldg-card a {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+}
+
+.discover .knwldg-card:hover {
+    z-index: 1000;
+    box-shadow: 12px 15px 20px #00000079;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-wrap {
+        padding: 200px 0 150px;
+    }
+    .features-wrap {
+        margin-top: 50px;
+    } 
+    .discover .discover-cards  {
+        margin: 50px 0;
+    }
+    .discover .knwldg-card {
+        width: 30%;
+        height: 250px;
+    } 
+    .discover .card1 {
+        left: 0;
+    }
+    .discover .card2 {
+        left: 35%;
+    }
+    .discover .card3 {
+        left: 70%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-wrap {
+        padding: 200px 0 150px;
+    }
+    .features-wrap {
+        margin-top: 50px;
+    }
+    
+    .discover .discover-cards  {
+        margin: 50px 0;
+    }
+    .discover .knwldg-card {
+        width: 30%;
+        height: 250px;
+    } 
+    .discover .card1 {
+        left: 0;
+    }
+    .discover .card2 {
+        left: 35%;
+    }
+    .discover .card3 {
+        left: 70%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-wrap {
+        padding: 250px 0 150px;
+    }
+    .features-wrap {
+        margin-top: 50px;
+    }
+    .discover-cards {
+        padding: 150px 0;
+    }
+    .discover .knwldg-card {
+        width: 300px;
+        height: 300px;
+    } 
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .discover .knwldg-card {
+        width: 300px;
+        height: 300px;
+    }   
+    .discover .discover-text h3 {
+        font-size: 60px;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+
