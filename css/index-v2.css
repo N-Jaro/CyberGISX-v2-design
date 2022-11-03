@@ -143,6 +143,9 @@
     color: #707070;
 }
 
+.inspired-card a.name  {
+    bottom: -30px; left:15px;
+}
 .inspired-card .description {
     transition: all .5s;
     width: 100%;
@@ -155,21 +158,32 @@
     opacity: 1;
 }
 
+#feature-section {
+    color: #707070;
+    text-align: center;
+}
+#feature-section .card {
+    margin-bottom: 0;
+}
 #feature-section .card-body h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-#feature-section .card img {
+#feature-section img {
     display: block;
-    width: 60%;
-    height: auto;
+    height: 120px;
     margin: 0 auto;
 }
 
-.get-started {
+.get-started{
     background-color:  #165178;
     color: #FFFFFF !important;
+}
+
+.get-started p{
+    font-size:20px;
+    padding-top: 20px;
 }
 .get-started h3 {
     font-family: "Roboto", sans-serif;
@@ -202,6 +216,48 @@
     .discover .card3 {
         left: 70%;
     }
+
+    .inspired {
+        padding-top: 150px;
+    }
+
+    .inspired .text{ 
+        text-align: center;
+    }
+    
+    .inspired-card a.name  {
+        bottom: 15px; left:15px;
+        color: #FFFFFF;
+    }
+    .inspired-card:hover .name {
+        display: none;
+    }
+
+    .get-started {
+        text-align: center !important;
+        background-color:  #ffffff;
+        color: #707070 !important;
+    }
+    #feature-section .card {
+        margin-bottom: 30px;
+    }
+
+    #feature-section .card img {
+        display: block;
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .get-started h3 {
+        color: #00DFFC;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .get-started p {
+        margin: 0;
+        padding: 10px;
+    }
+    
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -229,6 +285,35 @@
     .discover .card3 {
         left: 70%;
     }
+
+    .inspired {
+        padding-top: 150px;
+    }
+    .inspired .text{ 
+        text-align: center;
+    }
+    .inspired-card a.name  {
+        bottom: 15px; left:15px;
+        color: #FFFFFF;
+    }
+    .inspired-card:hover .name {
+        display: none;
+    }
+
+    
+    .get-started {
+        background-color:  #ffffff;
+        color: #707070 !important;
+        text-align: center !important;
+    }
+    .get-started h3 {
+        color: #00DFFC;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .feature-section .card img {
+        height: 50px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -246,6 +331,36 @@
         width: 300px;
         height: 300px;
     } 
+    
+    .inspired {
+        padding-top: 100px;
+    }
+    .description {
+        display: none;
+    }
+    
+    .inspired .text{ 
+        text-align: center;
+    }
+    
+    .inspired-card a.name  {
+        bottom: 15px; left:15px;
+        color: #FFFFFF;
+    }
+    .get-started {
+        text-align: center;
+        background-color:  #FFFFFF;
+        color: #707070 !important;
+    }
+    .get-started h3 {
+        color: #00DFFC;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .get-started p {
+        margin: 0;
+        padding: 10px;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -257,12 +372,18 @@
     .discover .discover-text h3 {
         font-size: 60px;
     }
+    
+    .inspired .text{ 
+        text-align: center;
+    }
 
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+    .inspired .text{ 
+        text-align: center;
+    }
 }
 
 
