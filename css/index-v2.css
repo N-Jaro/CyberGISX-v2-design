@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+body{
+    font-size: 16px;
+}
 .hero {
     background-image: url("../img/hero-bg.png");
     background-size: cover;
@@ -40,7 +43,7 @@
 }
 .features-wrap {
     transition: all .5s;
-    min-height: 420px;
+    min-height: 470px;
     color: #707070 !important;
     margin-top:-150px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -69,6 +72,7 @@
     background-position-x: 100%;
     /* background-size: 80%; */
     background-repeat: no-repeat;
+    margin-bottom: 150px ;
 }
 .discover-content {
     padding-top: 150px;
@@ -77,11 +81,17 @@
 
 .discover .discover-text h3 {
     color: #00DFFC;
-    font-size: 70px;
+    text-transform: uppercase;
+    font-size: 44px;
     margin-bottom: 0;
 }
 .discover .discover-text h4 {
-    font-size: 28px;
+    text-transform: uppercase;
+    font-size: 25px; 
+    margin-bottom: 30px;
+}
+
+.discover .discover-text p {
     margin-bottom: 20px;
 }
 
@@ -133,6 +143,7 @@
     height: 200px;
     width: 100%;
     box-shadow: 0px 3px 6px #00000029;
+    font-size: 15px;
 }
 .inspired-card:hover {
     box-shadow: 12px 15px 20px #00000079;
@@ -226,7 +237,8 @@
     }
     
     .inspired-card a.name  {
-        bottom: 15px; left:15px;
+        bottom: 15px; 
+        left:15px;
         color: #FFFFFF;
     }
     .inspired-card:hover .name {
@@ -370,11 +382,17 @@
         height: 300px;
     }   
     .discover .discover-text h3 {
-        font-size: 60px;
+        font-size: 30px;
+    }
+    .discover .discover-text h4 {
+        font-size: 20px;
     }
     
     .inspired .text{ 
         text-align: center;
+    }
+    .inspired-card {
+        font-size: 13px;
     }
 
 }
